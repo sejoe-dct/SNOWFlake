@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bubble_info.9.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\bubble_info.9.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_bubble_popup2.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\bubble_popup2.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_right_arrow.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\right_arrow.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_icon.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_map_pin_red.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\map_pin_red.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_popup.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\popup.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_poi_popup.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\poi_popup.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_bubble_popup.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\bubble_popup.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_point.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\point.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_icon.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_pcode_result_item.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\pcode_result_item.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable_zoom_out_btn_select.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable\\zoom_out_btn_select.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_i_location.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\i_location.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_icon.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-xhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_location_btn_sel.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\location_btn_sel.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_end.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\end.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_tmark.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\tmark.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zm_zoom_plus.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\zm_zoom_plus.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_poi_star.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\poi_star.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_row.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\list_row.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_location_btn.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\location_btn.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable_zoom_in_btn_select.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable\\zoom_in_btn_select.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_plus.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\plus.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_i_go.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\i_go.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_i_go_sel.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\i_go_sel.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zm_zoom_minus_sel.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\zm_zoom_minus_sel.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_poi_img.9.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\poi_img.9.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_pin_tevent.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\pin_tevent.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_poi_img2.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\poi_img2.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_poi_dot.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\poi_dot.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_pcode_result_dialog.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\pcode_result_dialog.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zm_zoom_minus.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\zm_zoom_minus.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_layout.xml.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\layout\\list_layout.xml"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_info_box.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\info_box.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zm_zoom_plus_sel.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\zm_zoom_plus_sel.png"
+    },
+    {
+        "merged": "C:\\SNOWFlake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon.png.flat",
+        "source": "C:\\SNOWFlake\\app\\src\\main\\res\\drawable-hdpi\\icon.png"
+    }
+]

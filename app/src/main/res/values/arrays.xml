@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="a_zoomlevel">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </string-array>
+    
+    <string-array name="a_maptype">
+        <item>STANDARD</item>
+        <item>SATELLITE</item>
+        <item>HYBRID</item>
+        <item>TRAFFIC</item>
+    </string-array>
+    
+    <string-array name="a_tiletype">
+        <item>NORMALTILE</item>
+        <item>HDTILE</item>
+    </string-array>
+    
+    <string-array name="a_select1">
+        <item>표출</item>
+        <item>삭제</item>
+    </string-array>
+    
+    <string-array name="a_select2">
+        <item>그리기</item>
+        <item>지우기</item>
+    </string-array>
+    
+    <string-array name="a_select3">
+        <item>설정</item>
+        <item>해제</item>
+    </string-array>
+
+</resources>
