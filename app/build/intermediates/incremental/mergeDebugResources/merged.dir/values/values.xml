@@ -51,7 +51,7 @@
     <string name="appInfo">
 	    T map에서 제공하는 Open API 샘플 파일입니다.\n상세한 API 사용에 대한 정보는 http://tmapapi.sktelecom.com/main.html#android/docs/androidDoc.TMapData 를 참조하시면 됩니다.\n\n문의사항은 tmap_api@sk.com 으로 문의하시기 바랍니다.\n\nSample App 버전 정보 : v0.5.1
 	</string>
-    <string name="app_name">SKT map API</string>
+    <string name="app_name">눈눈눈</string>
     <string name="aroundus">광고</string>
     <string name="bicycle_path">자전거경로</string>
     <string name="bicyclefacility">자전거시설물</string>
@@ -96,13 +96,9 @@
     <string name="zoomIn">줌 In</string>
     <string name="zoomOut">줌 Out</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
 </resources>
