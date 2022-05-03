@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SNOWFlake.iml" filepath="$PROJECT_DIR$/.idea/modules/SNOWFlake.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SNOWFlake.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SNOWFlake.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SNOWFlake.iml" filepath="$PROJECT_DIR$/.idea/modules/SNOWFlake.iml" group="SNOWFlake" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="SNOWFlake/app" />
     </modules>
   </component>
 </project>
