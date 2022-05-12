@@ -89,8 +89,7 @@ import org.w3c.dom.NodeList;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MainActivity extends Activity implements OnClickListener, onLocationChangedCallback, OnGeofencingPolygonCreatedCallback {
-    @Override
+public class MainActivity extends Activity implements OnClickListener  {
     public void onLocationChange(Location location) {
         LogManager.printLog("onLocationChange " + location.getLatitude() + " " + location.getLongitude() + " " + location.getSpeed() + " " + location.getAccuracy());
 
@@ -274,7 +273,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         m_bTrackingMode = false;
         setTrackingMode(false);
-        reverseLabel(false);
+        //reverseLabel(false);
 
         //mMapView.setScrollAnimation(TMapView.SCROLL_SENSITIVITY_ZORO);
     }
@@ -301,15 +300,15 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         mGroupList.add("초기화");
         mGroupList.add("지도컨트롤");
         mGroupList.add("POI");
-        mGroupList.add("Geocoding");
+        //mGroupList.add("Geocoding");
         mGroupList.add("위치트래킹");
         mGroupList.add("경로안내");
         mGroupList.add("Reverse Label");
-        mGroupList.add("T map연동");
-        mGroupList.add("Geofencing");
-        mGroupList.add("App 정보");
-        mGroupList.add("교통정보");
-        mGroupList.add("https테스트");
+        //mGroupList.add("T map연동");
+        //mGroupList.add("Geofencing");
+        //mGroupList.add("App 정보");
+        //mGroupList.add("교통정보");
+        //mGroupList.add("https테스트");
 
         mChildListContent1.add("줌 레벨 선택");
         mChildListContent1.add("화면 중심좌표");
@@ -416,9 +415,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                             @Override
                             public boolean onSelectEvent(int item) {
                                 if (item == 0) {
-                                    addTMapCircle();
+                                    //addTMapCircle();
                                 } else {
-                                    removeTMapCircle();
+                                    //removeTMapCircle();
                                 }
                                 return false;
                             }
@@ -442,9 +441,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                             @Override
                             public boolean onSelectEvent(int item) {
                                 if (item == 0) {
-                                    drawPolygon();
+                                    //drawPolygon();
                                 } else {
-                                    removeTMapPolygon();
+                                    //removeTMapPolygon();
                                 }
                                 return false;
                             }
@@ -485,6 +484,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                 }
 
                 break;
+            //poi주석
+            /*
             case 2: // poi
                 switch (childPosition) {
                     case 0: // POI 통합검색
@@ -509,6 +510,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                         break;
                 }
                 break;
+                */
+
+            //geocoding
+            /*
             case 3: // geocoding
                 switch (childPosition) {
                     case 0: // reverse geocoding
@@ -532,6 +537,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                         break;
                 }
                 break;
+                */
+
+            // 위치트래킹
+
             case 4: // 위치트래킹
                 switch (childPosition) {
                     case 0: // 트래킹 모드
@@ -591,10 +600,12 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                         break;
                 }
                 break;
+
+
             case 5: // 경로안내
                 switch (childPosition) {
                     case 0: // 자동차 경로
-                        drawCarPath();
+                        //drawCarPath();    //자동차경로주석1
                         break;
                     case 1: // 보행자 경로
                         drawPedestrianPath();
@@ -607,6 +618,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                 }
 
                 break;
+
+            // reverse label
+            /*
             case 6: // reverse label
                 Common.setOnClickSelectListenerCallBack(this, "Reverse label", R.array.a_select3, new Common.OnClickSelectListenerCallback() {
                     @Override
@@ -620,6 +634,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                     }
                 });
                 break;
+
+             */
+            //Tmap연동
+            /*
             case 7: // tmap 연동
                 switch (childPosition) {
                     case 0: // Tmap 실행하기
@@ -642,15 +660,24 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                 }
 
                 break;
+                */
+            //Geofencing
+            /*
             case 8: // Geofencing
                 // 구현
                 geofencing();
                 break;
+            */
 
+            //App정보
+            /*
             case 9: // App정보
                 Common.showAlertDialog(this, "App 정보", getString(R.string.appInfo));
                 break;
+            */
 
+             //교통정보
+            /*
             case 10: // 교통
                 Common.setOnClickSelectListenerCallBack(this, "교통정보", R.array.a_select3, new Common.OnClickSelectListenerCallback() {
                     @Override
@@ -665,30 +692,33 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                     }
                 });
                 break;
+             */
+            //https 테스트
+            /*
             case 11: // https 테스트
                 testHttps();
                 break;
-
+            */
             default:
                 break;
         }
     }
 
 
-    private void autocompleteV2() {
+    /*private void autocompleteV2() {
         autoCompleteV2Layout.setVisibility(View.VISIBLE);
-    }
+    }*/
 
-    private void testHttps() {
+    /*private void testHttps() {
         mMapView.testHttps();
-    }
+    }*/
 
     private void initMap() {
         mMapView.setZoomLevel(16);
         m_bTrackingMode = false;
         setTrackingMode(false);
         mMapView.setTileType(mMapView.TILETYPE_HDTILE);
-        removeTMapCircle();
+        //removeTMapCircle();
         erasePolyLine();
         // removeTMapPolygon();
 
@@ -697,7 +727,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         // mMapView.addTMapPolygon("POLYGON_GEOFENCE", polygon);
 
         removeMarker();
-        reverseGeocoding(false);
+        //reverseGeocoding(false);
 
         mMapView.setCompassMode(false);
         mMapView.setSightVisible(false);
@@ -705,7 +735,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         removeMapPath();
 
         mMapView.removeMarkerItem2(reverseLabelID);
-        reverseLabel(false);
+        //reverseLabel(false);
 
         m_nCurrentZoomLevel = -1;
         m_nCurrentMapType = 2;
@@ -771,7 +801,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             public void onDisableScrollWithZoomLevelEvent(float zoom, TMapPoint centerPoint) {
                 setTextLevel(MESSAGE_STATE_ZOOM);
                 if (m_bReverseGeoCoding) {
-                    reverseGeocoding(m_bReverseGeoCoding);
+                    //reverseGeocoding(m_bReverseGeoCoding);
                 }
             }
         });
@@ -787,7 +817,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                 for (int i = 0; i < markerlist.size(); i++) {
                     if (!markerlist.get(0).getCanShowCallout()) {
                         if (mPoiItem != null) {
-                            findPOIDetailInfo(mPoiItem.getPOIID(), mPoiItem.getPOIName());
+                            //findPOIDetailInfo(mPoiItem.getPOIID(), mPoiItem.getPOIName());
                         }
                     }
                 }
@@ -820,7 +850,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                findAllPoi(arDessert.get(position));
+                //findAllPoi(arDessert.get(position));
             }
         });
 
@@ -973,10 +1003,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                         editText.setText("");
                         hideKeyBoard();
                     }
-                    showPOIListAlert();
+                    //showPOIListAlert();
                     break;
                 case MESSAGE_STATE_POI_DETAIL:
-                    showPOIDetailAlert();
+                    //showPOIDetailAlert();
                     break;
                 case MESSAGE_STATE_POI_AUTO:
                     Adapter.notifyDataSetChanged();
@@ -1083,6 +1113,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         double latitude = ((double) Math.random()) * (37.575113 - 37.483086) + 37.483086;
         double longitude = ((double) Math.random()) * (127.027359 - 126.878357) + 126.878357;
 
+        //위도 경도 값
         latitude = Math.min(37.575113, latitude);
         latitude = Math.max(37.483086, latitude);
 
@@ -1113,6 +1144,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         return point;
     }
 
+    //reverseLabel
+/*
     public void reverseLabel(boolean show) {
         address = null;
         name = null;
@@ -1159,6 +1192,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         }
     }
+*/
 
     /**
      * mapZoomIn 지도를 한단계 확대한다.
@@ -1177,10 +1211,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * getZoomLevel 현재 줌의 레벨을 가지고 온다.
      */
-    public void getZoomLevel() {
+    /*public void getZoomLevel() {
         int nCurrentZoomLevel = mMapView.getZoomLevel();
         Common.showAlertDialog(this, "", "현재 Zoom Level : " + Integer.toString(nCurrentZoomLevel));
-    }
+    }*/
 
     /**
      * setZoomLevel Zoom Level을 설정한다.
@@ -1201,7 +1235,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * seetMapType Map의 Type을 설정한다.
      */
-    public void setMapType() {
+    /*public void setMapType() {
         AlertDialog dlg = new AlertDialog.Builder(this).setIcon(R.drawable.tmark).setTitle("Select MAP Type").setSingleChoiceItems(R.array.a_maptype, -1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int item) {
@@ -1210,7 +1244,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                 mMapView.setMapType(item);
             }
         }).show();
-    }
+    }*/
 
     /**
      * getLocationPoint 현재위치로 표시될 좌표의 위도, 경도를 반환한다.
@@ -1231,26 +1265,26 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * setCompassMode 단말의 방항에 따라 움직이는 나침반모드로 설정한다.
      */
-    public void setCompassMode() {
+    /*public void setCompassMode() {
         mMapView.setCompassMode(!mMapView.getIsCompass());
-    }
+    }*/
 
     /**
      * getIsCompass 나침반모드의 사용여부를 반환한다.
      */
-    public void getIsCompass() {
+    /*public void getIsCompass() {
         Boolean bGetIsCompass = mMapView.getIsCompass();
         Common.showAlertDialog(this, "", "현재 나침반 모드는 : " + bGetIsCompass.toString());
-    }
+    }*/
 
     /**
      * setSightVisible 시야표출여부를 설정한다.
      */
-    public void setSightVisible() {
+    /*public void setSightVisible() {
         m_bSightVisible = !m_bSightVisible;
         mMapView.setLocationPoint(mMapView.getCenterPoint().getLongitude(), mMapView.getCenterPoint().getLatitude());
         mMapView.setSightVisible(m_bSightVisible);
-    }
+    }*/
 
     /**
      * setTrackingMode 화면중심을 단말의 현재위치로 이동시켜주는 트래킹모드로 설정한다.
@@ -1309,6 +1343,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * addTMapCircle() 지도에 서클을 추가한다.
      */
+/*
     public void addTMapCircle() {
         TMapCircle circle = new TMapCircle();
 
@@ -1327,10 +1362,12 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         mMapView.addTMapCircle(strID, circle);
         mArrayCircleID.add(strID);
     }
+*/
 
     /**
      * removeTMapCircle 지도상의 해당 서클을 제거한다.
      */
+/*
     public void removeTMapCircle() {
         if (mArrayCircleID.size() <= 0)
             return;
@@ -1339,6 +1376,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         mMapView.removeTMapCircle(strCircleID);
         mArrayCircleID.remove(mArrayCircleID.size() - 1);
     }
+*/
 
     public void removeMarker() {
         mArrPoiItem = null;
@@ -1394,6 +1432,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * drawPolygon 지도에 폴리곤에 그린다.
      */
+/*
     public void drawPolygon() {
         int Min = 3;
         int Max = 10;
@@ -1425,10 +1464,12 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         mMapView.addTMapPolygon(strID, polygon);
         mArrayPolygonID.add(strID);
     }
+*/
 
     /**
      * erasePolygon 지도에 그려진 폴리곤을 제거한다.
      */
+/*
     public void removeTMapPolygon() {
         if (mArrayPolygonID.size() <= 0)
             return;
@@ -1440,6 +1481,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         mMapView.removeTMapPolygon(strPolygonID);
         mArrayPolygonID.remove(mArrayPolygonID.size() - 1);
     }
+*/
 
     private String getContentFromNode(Element item, String tagName) {
         NodeList list = item.getElementsByTagName(tagName);
@@ -1458,10 +1500,12 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         routeLayout.setVisibility(View.GONE);
         mMapView.removeTMapPath();
     }
-
+    /*
+    //자동차경로주석2
     public void drawCarPath() {
         findPathDataAllType(TMapPathType.CAR_PATH);
     }
+     */
 
     public void drawPedestrianPath() {
         findPathDataAllType(TMapPathType.PEDESTRIAN_PATH);
@@ -1554,7 +1598,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * findAllPoi 통합검색 POI를 요청한다.
      */
-    public void findAllPoi() {
+    /*public void findAllPoi() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("POI 통합 검색");
 
@@ -1603,7 +1647,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             }
         });
     }
-
+*/
+/*
     private void showPOIListAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("POI 통합 검색");
@@ -1628,7 +1673,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         });
         builder.show();
     }
+*/
 
+/*
     private void findPOIDetailInfo(String id, String name) {
         TMapData tmapdata = new TMapData();
 
@@ -1642,7 +1689,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             }
         });
     }
+*/
 
+/*
     private void showPOIDetailAlert() {
         String info = "";
         if (mPoiItem.getPOIName() != null) {
@@ -1677,10 +1726,12 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         Common.showAlertDialog(this, "POI 상세정보", info);
     }
+*/
 
     /**
      * convertToAddress 지도에서 선택한 지점을 주소를 변경요청한다.
      */
+/*
     public void reverseGeocoding(boolean show) {
         String strID = "ReverseGeocoding";
         m_bReverseGeoCoding = show;
@@ -1735,7 +1786,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             mMapView.removeMarkerItem2(strID);
         }
     }
+*/
 
+/*
     public void setReverseGeocoding(TMapPoint point) {
         if (oldBAddress != null && newAddress != null) {
             String strID = "ReverseGeocoding";
@@ -1746,10 +1799,12 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             mMapView.addMarkerItem2(strID, marker1);
         }
     }
+*/
 
     /**
      * getAroundBizPoi 업종별 주변검색 POI 데이터를 요청한다.
      */
+/*
     public void getAroundBizPoi() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("업종별 주변검색 POI");
@@ -1776,7 +1831,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                             for (int i = 0; i < poiItem.size(); i++) {
 
                                 TMapPOIItem item = poiItem.get(i);
-                                /*
+
                                 TMapMarkerItem markerItem = new TMapMarkerItem();
 
                                 strID = String.format("marker%d", mMarkerID++);
@@ -1791,7 +1846,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                                 mMapView.addMarkerItem(strID, markerItem);
 
                                 mArrayMarkerID.add(strID);
-                                */
+
+
 
                                 arrPoint.add(item.getPOIPoint());
 
@@ -1817,6 +1873,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         builder.show();
     }
+*/
 
     public void setTileType() {
         AlertDialog dlg = new AlertDialog.Builder(this).setIcon(R.drawable.tmark).setTitle("Select MAP Tile Type")
@@ -1846,6 +1903,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     /**
      * 읍면동/도로명 조회
      */
+
+/*
     public void getPoiAreaDataByName() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("읍면동/도로명 조회");
@@ -1909,9 +1968,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         builder.show();
     }
+*/
 
     // 지오펜싱 다이얼로그 표출 16.06.21
-    public void geofencing() {
+    /*public void geofencing() {
         final CharSequence regionNames[] = {"시,도 단위", "시,군,구 단위", "법정동", "행정동"};
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Geofencing").setIcon(R.drawable.tmark);
@@ -1937,9 +1997,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         builder.setView(input);
         builder.show();
-    }
+    }*/
 
     // 실제 지오펜싱 수행 16.06.21
+    /*
     public void geofencing(int regionType, String regionName) {
         Geofencer geofencer = new Geofencer(mApiKey);
         geofencer.requestGeofencingBaseData(geofencer.getRegionTypeFromOrder(regionType), regionName, new OnGeofencingBaseDataReceivedCallback() {
@@ -1976,7 +2037,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             }
         });
     }
+     */
 
+/*
     public void autoComplete() {
         arDessert.clear();
         editText.setText("");
@@ -1986,12 +2049,14 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             autoCompleteLayout.setVisibility(View.VISIBLE);
         }
     }
-
+*/
+    /*
     public void invokeSafeDrive() {
         TMapTapi tmaptapi = new TMapTapi(mContext);
         tmaptapi.invokeSafeDrive();
     }
-
+    */
+    /*
     public void invokeRoute() {
         final TMapPoint point = mMapView.getCenterPoint();
         TMapData tmapdata = new TMapData();
@@ -2032,13 +2097,15 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             });
         }
     }
-
+    */
+    /*
     public void invokeTmap() {
         TMapTapi tmaptapi = new TMapTapi(mContext);
         tmaptapi.invokeTmap();
     }
+    */
 
-    public void invokeSetLocation() {
+    /*public void invokeSetLocation() {
         final TMapPoint point = mMapView.getCenterPoint();
         TMapData tmapdata = new TMapData();
 
@@ -2051,8 +2118,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
                 tmaptapi.invokeSetLocation(strAddress, fX, fY);
             }
         });
-    }
+    }*/
 
+/*
     public void invokeSearchProtal() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("T MAP 통합 검색");
@@ -2084,7 +2152,10 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         });
         builder.show();
     }
+*/
 
+
+/*
     public void fullTextGeocoding() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Full Text Geocoding");
@@ -2128,6 +2199,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         });
         builder.show();
     }
+*/
+
 
     // 20170522 JWCha : FullTextGeocoding 기능 추가 - START
     public class FullAddrData {
@@ -2273,6 +2346,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         });
     }
 
+
     public void drawFullAddrGeo(FullAddrData fullAddrData) {
         String strID = "FullTextGeocoding";
 
@@ -2298,6 +2372,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             mMapView.addMarkerItem(strID + "Entr", marker2);
         }
     }
+
+
 
     public String getFullAddrGeoFlagInfo(String flag) {
         if (flag != null && !flag.equals("")) {
@@ -2344,9 +2420,11 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             return "matchFlag 가 비어있습니다.";
         }
     }
+
     // 20170522 JWCha : FullTextGeocoding 기능 추가 - END
 
 
+/*
     public void checkTmapApplicationInstalled() {
         TMapTapi tmaptapi = new TMapTapi(mContext);
         boolean isInstalled = tmaptapi.isTmapApplicationInstalled();
@@ -2356,7 +2434,9 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
             Toast.makeText(mContext, "TMap 이 설치되어 있지 않습니다.", Toast.LENGTH_SHORT).show();
         }
     }
+*/
 
+/*
     public void tmapInstall() {
         new Thread() {
             @Override
@@ -2369,6 +2449,7 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
 
         }.start();
     }
+*/
 
     @Override
     public void onBackPressed() {
@@ -2391,7 +2472,8 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
     }
 
     // 지오펜싱 폴리곤 생성 완료 콜백 16.06.22
-    @Override
+    //@Override
+/*
     public void onReceived(ArrayList<TMapPolygon> polygons) {
         if (polygons.size() > 0) {
             double latitudeSum = 0.0;
@@ -2413,4 +2495,5 @@ public class MainActivity extends Activity implements OnClickListener, onLocatio
         }
         //Toast.makeText(MainActivity.this, "Polygon " + polygon.getID() + " is drawn.", Toast.LENGTH_SHORT).show();
     }
+*/
 }
